@@ -15,7 +15,7 @@ const Support: React.FC = () => {
           variant="contained"
           color="secondary"
           size="large"
-          href="https://buymeacoffee.com/shaptech"
+          href="https://buymeacoffee.com/shaptechstv"
           aria-label="Support ShapTech Studio on Buy Me a Coffee"
           sx={{ fontSize: '1.1rem', px: 4, py: 1.5 }}
         >
