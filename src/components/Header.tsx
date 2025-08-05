@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <Container maxWidth="lg">
         <Toolbar sx={{ minHeight: '100px', py: 0 }}>
           <img 
-            src="/img/259146fc-8650-4957-b32d-53a24ca3b9fb.png" 
+            src="/shaptechstudio/img/259146fc-8650-4957-b32d-53a24ca3b9fb.png" 
             alt="ShapTech Studio" 
             style={{ height: '100px', marginRight: '16px' }}
           />
