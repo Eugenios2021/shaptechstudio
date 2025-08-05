@@ -15,7 +15,7 @@ const About: React.FC = () => {
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center" flexWrap="wrap" useFlexGap>
           {technologies.map((tech) => (
-            <Chip key={tech} label={tech} variant="outlined" size="large" />
+            <Chip key={tech} label={tech} variant="outlined" size="medium" />
           ))}
         </Stack>
       </Container>
