@@ -1,0 +1,247 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Main sections */
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Project section */
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.project-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.project-content {
+    flex: 1;
+}
+
+/* Tech stack */
+.tech-stack {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tech {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    min-height: 44px;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    background-color: #005a99;
+}
+
+.btn:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+.support-btn {
+    background-color: #ff813f;
+}
+
+.support-btn:hover {
+    background-color: #e6732d;
+}
+
+/* Support section */
+.support {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 3rem 0 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-section a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section a:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .project-icon {
+        font-size: 3rem;
+    }
+    
+    .tech-stack {
+        justify-content: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast */
+a {
+    color: #007acc;
+}
+
+a:visited {
+    color: #5a5a5a;
+}
