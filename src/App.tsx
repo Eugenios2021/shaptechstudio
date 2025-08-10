@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import Header from './components/Header'
@@ -7,6 +8,7 @@ import Project from './components/Project'
 import About from './components/About'
 import Support from './components/Support'
 import Footer from './components/Footer'
+import PrivatePolicy from './components/private_policy'
 
 const theme = createTheme({
   palette: {
@@ -30,18 +32,32 @@ const theme = createTheme({
   },
 })
 
+const HomePage = () => (
+  <>
+    <Hero />
+    <Project />
+    <About />
+    <Support />
+  </>
+)
+
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      <main>
-        <Hero />
-        <Project />
-        <About />
-        <Support />
-      </main>
-      <Footer />
+      <Router>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/shaptechstudio" element={<HomePage />} />
+            <Route path="/privacy-policy" element={<PrivatePolicy />} />
+            <Route path="/shaptechstudio/privacy-policy" element={<PrivatePolicy />} />
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </ThemeProvider>
   )
 }

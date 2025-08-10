@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <Box component="footer" sx={{ bgcolor: '#f5f5f5', py: 6, borderTop: '1px solid #e0e0e0' }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} sx={{ mb: 4 }}>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Typography variant="h6" sx={{ mb: 2 }}>
               Contact
             </Typography>
@@ -14,16 +14,17 @@ const Footer: React.FC = () => {
               Email: <Link href="mailto:contact@shaptech.studio">shaptechstudio@gmail.com</Link>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Typography variant="h6" sx={{ mb: 2 }}>
               Links
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               <Link href="#projects">Projects</Link>
               <Link href="#about">About</Link>
+              <Link href="#/privacy-policy">Private Policy</Link>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Typography variant="h6" sx={{ mb: 2 }}>
               Privacy
             </Typography>
